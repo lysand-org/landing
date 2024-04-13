@@ -1,5 +1,16 @@
 <template>
     <header class="absolute inset-x-0 top-0 z-50">
+        <div
+            class="relative isolate warning-background flex items-center gap-x-6 overflow-hidden bg-dark-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 w-full">
+                <p class="text-sm text-gray-50 bg-dark-900 px-2 rounded py-1">
+                    <strong class="font-semibold">Warning!</strong>&nbsp;•&nbsp;This is a testing site used for
+                    development, not a finished page.
+                </p>
+            </div>
+            <div class="flex justify-end">
+            </div>
+        </div>
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <NuxtLink href="/" class="-m-1.5 p-1.5">
@@ -63,4 +74,8 @@ const navigation = [
 const mobileMenuOpen = ref(false);
 </script>
 
-<style></style>
+<style>
+.warning-background {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f9d63d' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+</style>

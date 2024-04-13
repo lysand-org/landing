@@ -49,7 +49,6 @@ const args = defineProps<{
 
 const timeAgo = useTimeAgo(args.status.created_at);
 
-
 const mentions = await useResolveMentions(args.status.mentions);
 const content = await useParsedContent(args.status.content, args.status.emojis, mentions.value);
 const numberFormat = (number: number) => new Intl.NumberFormat(undefined, {
