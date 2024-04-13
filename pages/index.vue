@@ -26,6 +26,10 @@
             </div>
         </div>
 
+        <div class="mx-auto max-w-2xl mb-20">
+            <SocialElementsNotesNote :status="status" />
+        </div>
+
         <div
             class="relative mx-auto max-w-2xl isolate px-6 lg:px-8 py-10 bg-dark-800 shadow-xl rounded ring-1 ring-white/5">
             <div class="prose prose-invert">
@@ -216,7 +220,82 @@
 </template>
 
 <script lang="ts" setup>
+import type { Status } from "~/types/mastodon/status";
 
+const status: Status = {
+    id: "018ecae7-3e40-733a-a404-9a6f5dc5a925",
+    in_reply_to_id: "018ecae6-405a-7f0d-a406-dfa740ece8be",
+    in_reply_to_account_id: "018eb863-753f-76ff-83d6-fd590de7740a",
+    account: {
+        id: "018eb863-753f-76ff-83d6-fd590de7740a",
+        username: "jessew",
+        display_name: "Jesse Wierzbinski",
+        note: "<p>This is my profile, yo</p>",
+        url: "https://social.lysand.org/@jessew",
+        avatar: "https://cdn.lysand.org/favicon.png",
+        header: "",
+        locked: true,
+        created_at: "2024-04-07T11:48:29.623Z",
+        followers_count: 2,
+        following_count: 4,
+        statuses_count: 23,
+        emojis: [],
+        fields: [],
+        bot: false,
+        avatar_static: "",
+        header_static: "",
+        acct: "jessew",
+        limited: false,
+        moved: null,
+        noindex: false,
+        suspended: false,
+        group: false,
+    },
+    created_at: "2024-04-11T02:05:36.187Z",
+    application: null,
+    card: null,
+    content:
+        '<p><a class="u-url mention" rel="nofollow noopener noreferrer" target="_blank" href="@">@gordonramsaylover301</a> Check out these cool emojis capabilities! :neocat: </p>',
+    emojis: [
+        {
+            shortcode: "neocat",
+            static_url:
+                "https://cdn.lysand.org/e06240155d2cb90e8dc05327d023585ab9d47216ff547ad72aaf75c485fe9649/neocat_256.webp",
+            url: "https://cdn.lysand.org/e06240155d2cb90e8dc05327d023585ab9d47216ff547ad72aaf75c485fe9649/neocat_256.webp",
+            visible_in_picker: true,
+        },
+    ],
+    favourited: false,
+    favourites_count: 13965,
+    media_attachments: [],
+    mentions: [
+        {
+            acct: "gordonramsaylover301",
+            id: "018eb863-753f-76ff-83d6-fd590de7740a",
+            url: "https://social.lysand.org/@gordonramsaylover301",
+            username: "gordonramsaylover301",
+        }
+    ],
+    language: null,
+    muted: false,
+    pinned: false,
+    poll: null,
+    reblog: null,
+    reblogged: false,
+    reblogs_count: 3043,
+    replies_count: 155,
+    sensitive: false,
+    spoiler_text: "",
+    tags: [],
+    uri: "#",
+    visibility: "public",
+    url: "#",
+    bookmarked: false,
+    quote: false,
+    plain_content: "@gordonramsaylover301 what about this cool emoji :neocat: ",
+    edited_at: null,
+    emoji_reactions: [],
+};
 </script>
 
 <style></style>

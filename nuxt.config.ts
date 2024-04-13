@@ -40,6 +40,7 @@ export default defineNuxtConfig({
     ogImage: {
         enabled: false,
     },
+    // Make the happy-dom package only available in the server context
     runtimeConfig: {
         public: {
             language: "en-US",

@@ -54,13 +54,13 @@
 
 <script lang="ts" setup>
 const navigation = [
-    { name: 'About', href: '/' },
-    { name: 'Roadmap', href: '/' },
-    { name: 'Documentation', href: '/' },
-    { name: 'Team', href: '/' },
-]
+    { name: "About", href: "/" },
+    { name: "Roadmap", href: "/" },
+    { name: "Documentation", href: "/" },
+    { name: "Team", href: "/" },
+];
 
-const mobileMenuOpen = ref(false)
+const mobileMenuOpen = ref(false);
 </script>
 
 <style></style>
